@@ -1,0 +1,28 @@
+@import "./desktopView";
+@import "./mobileView";
+@import "./tabletView";
+@import "./animations";
+@import "./variables";
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: all 1s;
+}
+
+.features-hidden {
+  opacity: 0;
+}
+
+.animate-features {
+  animation: popup 1s 1 linear forwards;
+}
+
+@keyframes popup {
+  100% {
+    transform: scale(100%);
+  }
+}
