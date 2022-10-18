@@ -1,9 +1,12 @@
 @import "./variables";
 
+@import url("http://fonts.cdnfonts.com/css/dejavu-sans");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Dejavu sans";
+  font-family: "DejaVu Sans", sans-serif;
+  font-family: "DejaVu Sans Condensed", sans-serif;
   box-sizing: border-box;
 
   ::-webkit-scrollbar {
