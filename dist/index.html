@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="/Scripts/main.js" defer></script> -->
-    <link rel="stylesheet" href="/styles/css/main.css" />
-    <link rel="shortcut icon" type="image/png" href="/SVG/icons.svg" />
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.css" />
+    <link rel="shortcut icon" type="image/png" href="./icons.svg" />
 
     <title>Agriculture</title>
   </head>
@@ -14,7 +16,26 @@
     <header class="header_container">
       <div class="header">
         <div class="header-left">
-          <img src="/svg/logo.svg" alt="" style="margin-right: 50px" />
+          <div class="footer-logo_container" style="display: flex">
+            <div
+              class="footer_logo fa-flip-horizontal"
+              style="position: relative; color: #dfeef4; width: auto"
+            >
+              <span style="position: absolute; left: 12px; top: 5px"
+                ><i class="fa-solid fa-leaf fa-flip-horizontal fa-2x"></i
+              ></span>
+              <span style="position: absolute; left: 33px; top: 2px"
+                ><i
+                  class="fa-solid fa-leaf fa-xxs fa-rotate-by"
+                  style="--fa-rotate-angle: -45deg; --fa-position: absolute"
+                ></i
+              ></span>
+              <span style="margin-left: 40px"
+                ><i class="fa-solid fa-tractor fa-3x"></i
+              ></span>
+              <!-- <h3>Craft</h3> -->
+            </div>
+          </div>
         </div>
         <ul class="header-right nav-bar nav_links hide-nav">
           <li class="nav_item">
@@ -31,7 +52,7 @@
           </li>
           <li class="nav_item header_btn">
             <svg>
-              <use xlink:href="/SVG/icons.svg#icon-phone"></use>
+              <use xlink:href="./icons.svg#icon-phone"></use>
             </svg>
             <a href=".section-7" class="nav_link header_btn-text">
               Get In Touch
@@ -48,22 +69,23 @@
           <span class="section-1_text_h1-span">Agriculture</span>
         </h1>
         <p class="section-1_text-p">
-          We take mechanized farming, commercial cropping and plant protection
-          to a whole new level
+          Taking mechanized farming and plant protection to a whole new level
         </p>
         <!-- <button class="section-1_btn">Get Started</button> -->
       </div>
       <div class="section-1_img_container">
-        <img
-          class="section-1_img section-1_img-1"
-          src="/imgs/tractor.jpg"
-          alt=""
-        />
-        <img
-          class="section-1_img section-1_img-2"
-          src="/imgs/veggies.jpg"
-          alt=""
-        />
+        <div class="section-1_img-wrapper">
+          <img
+            class="section-1_img section-1_img-1"
+            src="./tractor.jpg"
+            alt=""
+          />
+          <img
+            class="section-1_img section-1_img-2"
+            src="./veggies.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
     <section class="section section-2">
@@ -74,13 +96,13 @@
           playsinline
           muted="muted"
           class="hero_vid"
-          src="/video/backgroundAgric.mp4"
+          src="./backgroundAgric.mp4"
         ></video>
         <div class="section-2_items">
           <div class="section-2_text_container section-2_text_container-1">
             <div class="section-2_text_img section-2_text_img-1">
               <svg>
-                <use xlink:href="/SVG/icons.svg#icon-truck"></use>
+                <use xlink:href="./icons.svg#icon-truck"></use>
               </svg>
             </div>
             <h2 class="section-2_text-h2 section-2_text-h2-1">I am This</h2>
@@ -100,7 +122,7 @@
           <div class="section-2_text_container section-2_text_container-2">
             <div class="section-2_text_img section-2_text_img-2">
               <svg>
-                <use xlink:href="/SVG/icons.svg#icon-cloud"></use>
+                <use xlink:href="./icons.svg#icon-cloud"></use>
               </svg>
             </div>
             <h2 class="section-2_text-h2 section-2_text-h2-2">That and this</h2>
@@ -121,7 +143,7 @@
           <div class="section-2_text_container section-2_text_container-3">
             <div class="section-2_text_img section-2_text_img-3">
               <svg>
-                <use xlink:href="/SVG/icons.svg#icon-umbrella"></use>
+                <use xlink:href="./icons.svg#icon-umbrella"></use>
               </svg>
             </div>
             <h2 class="section-2_text-h2 section-2_text-h2-3">This and That</h2>
@@ -143,53 +165,57 @@
 
     <section class="section section-3">
       <div class="section-3_items_container-1">
-        <img
-          class="section-3_img section-3_img-2"
-          src="/imgs/arielView2.jpg"
-          alt=""
-        />
-        <img
-          class="section-3_img section-3_img-1"
-          src="/imgs/arielView.jpg"
-          alt=""
-        />
-        <div class="section-3_text section-3_text-1">
-          <h2 class="section-3_text-h2-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
-          </h2>
-          <p class="section-3_text-p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            nulla accusantium repudiandae magni adipisci ipsam quia nam
-            nesciunt, mollitia aliquid voluptate hic, aperiam ad itaque et!
-            Aspernatur vero, iste ut, quaerat quos consequatur placeat dolore
-            reprehenderit optio adipisci vitae dicta a aliquam? Aut, beatae
-            ullam sequi facere architecto id dolorum?
-          </p>
+        <div class="section-3_items-wrapper section-3_items-wrapper-1">
+          <div class="section-3-img_container section-3-img_container-1">
+            <img
+              class="section-3_img section-3_img-2"
+              src="./arielView2.jpg"
+              alt=""
+            />
+            <img
+              class="section-3_img section-3_img-1"
+              src="./arielView.jpg"
+              alt=""
+            />
+          </div>
+          <div class="section-3_text section-3_text-1">
+            <h2 class="section-3_text-h2-1">Lorem, ipsum dolor.</h2>
+            <p class="section-3_text-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              nulla accusantium repudiandae magni adipisci ipsam quia nam
+              nesciunt, mollitia aliquid voluptate hic, aperiam ad itaque et!
+              Aspernatur vero, iste ut, quaerat quos consequatur placeat dolore
+              reprehenderit optio adipisci vitae dicta a aliquam? Aut, beatae
+              ullam sequi facere architecto id dolorum?
+            </p>
+          </div>
         </div>
 
-        <div class="section-3_text section-3_text-2">
-          <h2 class="section-3_text-h2-2">
-            Lorem, ipsum dolor sit amet consectetur adipisicing.
-          </h2>
-          <p class="section-3_text-p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            nulla accusantium repudiandae magni adipisci ipsam quia nam
-            nesciunt, mollitia aliquid voluptate hic, aperiam ad itaque et!
-            Aspernatur vero, iste ut, quaerat quos consequatur placeat dolore
-            reprehenderit optio adipisci vitae dicta a aliquam? Aut, beatae
-            ullam sequi facere architecto id dolorum?
-          </p>
+        <div class="section-3_items-wrapper section-3_items-wrapper-2">
+          <div class="section-3_text section-3_text-2">
+            <h2 class="section-3_text-h2-2">Lorem, ipsum dolor.</h2>
+            <p class="section-3_text-p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              nulla accusantium repudiandae magni adipisci ipsam quia nam
+              nesciunt, mollitia aliquid voluptate hic, aperiam ad itaque et!
+              Aspernatur vero, iste ut, quaerat quos consequatur placeat dolore
+              reprehenderit optio adipisci vitae dicta a aliquam? Aut, beatae
+              ullam sequi facere architecto id dolorum?
+            </p>
+          </div>
+          <div class="section-3-img_container section-3-img_container-2">
+            <img
+              class="section-3_img section-3_img-3"
+              src="./labTest2.jpg"
+              alt=""
+            />
+            <img
+              class="section-3_img section-3_img-4"
+              src="./fieldTest.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <img
-          class="section-3_img section-3_img-3"
-          src="/imgs/labTest2.jpg"
-          alt=""
-        />
-        <img
-          class="section-3_img section-3_img-4"
-          src="/imgs/fieldTest.jpg"
-          alt=""
-        />
       </div>
     </section>
 
@@ -204,40 +230,31 @@
             <div class="feature_wrapper feature-1">
               <div class="feature_img feature-1_img">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-cloud"></use>
+                  <use xlink:href="./icons.svg#icon-cloud"></use>
                 </svg>
               </div>
               <div class="feature_text feature-1_text">
                 <h3 class="feature_text-h3 feature_text-h3-1">This & That</h3>
-                <p class="feature_text-p feature_text-p-1">
-                  This and that, that and this
-                </p>
               </div>
             </div>
             <div class="feature_wrapper feature-2">
               <div class="feature_img feature-2_img">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-cloud"></use>
+                  <use xlink:href="./icons.svg#icon-cloud"></use>
                 </svg>
               </div>
               <div class="feature_text feature-2_text">
                 <h3 class="feature_text-h3 feature_text-h3-2">This & That</h3>
-                <p class="feature_text-p feature_text-p-2">
-                  This and that, that and this
-                </p>
               </div>
             </div>
             <div class="feature_wrapper feature-3">
               <div class="feature_img feature-3_img">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-cloud"></use>
+                  <use xlink:href="./icons.svg#icon-cloud"></use>
                 </svg>
               </div>
               <div class="feature_text feature-3_text">
                 <h3 class="feature_text-h3 feature_text-h3-3">This & That</h3>
-                <p class="feature_text-p feature_text-p-3">
-                  This and that, that and this
-                </p>
               </div>
             </div>
           </div>
@@ -254,33 +271,35 @@
             </div>
           </div>
 
-          <div class="section-5-right_container">
-            <div class="section-5-right_container-child">
+          <div class="section-5-slide_container">
+            <div class="section-5-slide_container-child">
               <div class="slide_btn slide_btn-left">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-arrow-left"></use>
+                  <use xlink:href="./icons.svg#icon-arrow-left"></use>
                 </svg>
               </div>
-              <div class="section-5-right_wrapper">
-                <div class="section-5-right section-5-right-1">
-                  <div class="section-5-right-top">
-                    <div class="section-5-right-top-left">
-                      <div class="section-5-right-top_img">
-                        <img src="/imgs/tomatoes.jpg" alt="" />
+              <div class="section-5-slide_wrapper">
+                <div class="section-5-slide section-5-slide-1">
+                  <div class="section-5-slide-top">
+                    <div class="section-5-slide-top-left">
+                      <div class="section-5-slide-top_img">
+                        <img src="./youngman-slide.jpg" alt="" />
                       </div>
-                      <div class="section-5-right-top_text">
+                      <div class="section-5-slide-top_text">
                         <h3>John Doe</h3>
                         <h5>@twitterTag</h5>
                       </div>
                     </div>
                     <div
-                      class="section-5-right-top-right"
+                      class="section-5-slide-top-right"
                       style="font-size: 50px"
                     >
-                      <div class="section-5-right-top-right_quote"></div>
+                      <div class="section-5-slide-top-right_quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
                     </div>
                   </div>
-                  <div class="section-5-right-bottom">
+                  <div class="section-5-slide-bottom">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Excepturi eius similique a exercitationem, ab tempore qui
@@ -292,25 +311,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="section-5-right section-5-right-2">
-                  <div class="section-5-right-top">
-                    <div class="section-5-right-top-left">
-                      <div class="section-5-right-top_img">
-                        <img src="/imgs/tomatoes.jpg" alt="" />
+                <div class="section-5-slide section-5-slide-2">
+                  <div class="section-5-slide-top">
+                    <div class="section-5-slide-top-left">
+                      <div class="section-5-slide-top_img">
+                        <img src="./hat-lady-slide.jpg" alt="" />
                       </div>
-                      <div class="section-5-right-top_text">
+                      <div class="section-5-slide-top_text">
                         <h3>John Doe</h3>
                         <h5>@twitterTag</h5>
                       </div>
                     </div>
                     <div
-                      class="section-5-right-top-right"
+                      class="section-5-slide-top-right"
                       style="font-size: 50px"
                     >
-                      <div class="section-5-right-top-right_quote"></div>
+                      <div class="section-5-slide-top-right_quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
                     </div>
                   </div>
-                  <div class="section-5-right-bottom">
+                  <div class="section-5-slide-bottom">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Excepturi eius similique a exercitationem, ab tempore qui
@@ -322,25 +343,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="section-5-right section-5-right-3">
-                  <div class="section-5-right-top">
-                    <div class="section-5-right-top-left">
-                      <div class="section-5-right-top_img">
-                        <img src="/imgs/tomatoes.jpg" alt="" />
+                <div class="section-5-slide section-5-slide-3">
+                  <div class="section-5-slide-top">
+                    <div class="section-5-slide-top-left">
+                      <div class="section-5-slide-top_img">
+                        <img src="./oldman-slide.jpg" alt="" />
                       </div>
-                      <div class="section-5-right-top_text">
+                      <div class="section-5-slide-top_text">
                         <h3>John Doe</h3>
                         <h5>@twitterTag</h5>
                       </div>
                     </div>
-                    <div
-                      class="section-5-right-top-right"
-                      style="font-size: 50px"
-                    >
-                      <div class="section-5-right-top-right_quote"></div>
+                    <div class="section-5-slide-top-right">
+                      <div class="section-5-slide-top-right_quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
                     </div>
                   </div>
-                  <div class="section-5-right-bottom">
+                  <div class="section-5-slide-bottom">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Excepturi eius similique a exercitationem, ab tempore qui
@@ -355,7 +375,7 @@
               </div>
               <div class="slide_btn slide_btn-right">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-arrow-right"></use>
+                  <use xlink:href="./icons.svg#icon-arrow-right"></use>
                 </svg>
               </div>
             </div>
@@ -375,7 +395,7 @@
             <div class="article_img_container article-1_img_container">
               <img
                 class="article_img airticle-1_img"
-                src="/imgs/fieldTest.jpg"
+                src="./Lady-meet-us.jpg"
                 alt=""
               />
             </div>
@@ -392,7 +412,7 @@
             <div class="article_img_container article-2_img_container">
               <img
                 class="article_img airticle-2_img"
-                src="/imgs/fieldTest.jpg"
+                src="./guy-meet-us.jpg"
                 alt=""
               />
             </div>
@@ -423,7 +443,7 @@
             <div class="info info-1">
               <div class="info_icon info_icon-1">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-map-pin"></use>
+                  <use xlink:href="./icons.svg#icon-map-pin"></use>
                 </svg>
               </div>
               <div class="info_text info_text-1">
@@ -434,7 +454,7 @@
             <div class="info info-2">
               <div class="info_icon info_icon-2">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-phone"></use>
+                  <use xlink:href="./icons.svg#icon-phone"></use>
                 </svg>
               </div>
               <div class="info_text info_text-2">
@@ -445,7 +465,7 @@
             <div class="info info-3">
               <div class="info_icon info_icon-3">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-mail"></use>
+                  <use xlink:href="./icons.svg#icon-mail"></use>
                 </svg>
               </div>
               <div class="info_text info_text-3">
@@ -477,9 +497,25 @@
     <footer class="footer">
       <div class="footer_container">
         <div class="footer_container_item footer_container-1">
-          <div class="footer_logo">
-            <img src="/SVG/logo.svg" alt="" />
-            <!-- <h3>Craft</h3> -->
+          <div class="footer-logo_container" style="display: flex">
+            <div
+              class="footer_logo fa-flip-horizontal"
+              style="position: relative; color: #3da73d; width: auto"
+            >
+              <span style="position: absolute; left: 0px; top: 5px"
+                ><i class="fa-solid fa-leaf fa-flip-horizontal fa-3x"></i
+              ></span>
+              <span style="position: absolute; left: 33px; top: 5px"
+                ><i
+                  class="fa-solid fa-leaf fa-xl fa-rotate-by"
+                  style="--fa-rotate-angle: -45deg; --fa-position: absolute"
+                ></i
+              ></span>
+              <span style="margin-left: 40px"
+                ><i class="fa-solid fa-tractor fa-5x"></i
+              ></span>
+              <!-- <h3>Craft</h3> -->
+            </div>
           </div>
           <div class="footer_container-1_text">
             <p>
@@ -490,25 +526,25 @@
             <div class="social_link">
               <a href="#">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-facebook"></use></svg
+                  <use xlink:href="./icons.svg#icon-facebook"></use></svg
               ></a>
             </div>
             <div class="social_link">
               <a href="#">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-twitter"></use></svg
+                  <use xlink:href="./icons.svg#icon-twitter"></use></svg
               ></a>
             </div>
             <div class="social_link">
               <a href="#">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-youtube"></use></svg
+                  <use xlink:href="./icons.svg#icon-youtube"></use></svg
               ></a>
             </div>
             <div class="social_link">
               <a href="#">
                 <svg>
-                  <use xlink:href="/SVG/icons.svg#icon-instagram"></use></svg
+                  <use xlink:href="./icons.svg#icon-instagram"></use></svg
               ></a>
             </div>
           </div>
@@ -521,7 +557,7 @@
               <li class="quick_link quick_link-1">
                 <a class="nav_link" href=".section-2">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-arrow-right"></use>
+                    <use xlink:href="./icons.svg#icon-arrow-right"></use>
                   </svg>
                   Home</a
                 >
@@ -529,7 +565,7 @@
               <li class="quick_link quick_link-2">
                 <a class="nav_link" href=".section-3">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-arrow-right"></use>
+                    <use xlink:href="./icons.svg#icon-arrow-right"></use>
                   </svg>
                   About Us</a
                 >
@@ -537,7 +573,7 @@
               <li class="quick_link quick_link-3">
                 <a class="nav_link" href=".section-6">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-arrow-right"></use>
+                    <use xlink:href="./icons.svg#icon-arrow-right"></use>
                   </svg>
                   Our Team</a
                 >
@@ -545,7 +581,7 @@
               <li class="quick_link quick_link-4">
                 <a class="nav_link" href=".section-7">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-arrow-right"></use>
+                    <use xlink:href="./icons.svg#icon-arrow-right"></use>
                   </svg>
                   Contact Us</a
                 >
@@ -559,7 +595,7 @@
               <li class="footer_contact footer_contact-1">
                 <a href="$">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-map-pin"></use>
+                    <use xlink:href="./icons.svg#icon-map-pin"></use>
                   </svg>
                   Contact Us
                 </a>
@@ -567,7 +603,7 @@
               <li class="footer_contact footer_contact-2">
                 <a href="$">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-mail"></use>
+                    <use xlink:href="./icons.svg#icon-mail"></use>
                   </svg>
                   Contact Us
                 </a>
@@ -575,7 +611,7 @@
               <li class="footer_contact footer_contact-3">
                 <a href="$">
                   <svg>
-                    <use xlink:href="/SVG/icons.svg#icon-phone"></use>
+                    <use xlink:href="./icons.svg#icon-phone"></use>
                   </svg>
                   Contact Us</a
                 >
@@ -586,15 +622,23 @@
         <div class="footer_container_item footer_container-3">
           <h3>Instagram Post</h3>
           <div class="instagram-post_imgs">
-            <img src="/imgs/sheep.jpg" alt="" srcset="" />
-            <img src="/imgs/herbicide-man.jpg" alt="" srcset="" />
-            <img src="/imgs/farm-lady.jpg" alt="" srcset="" />
-            <img src="/imgs/man.jpg" alt="" srcset="" />
-            <img src="/imgs/tractor-again.jpg" alt="" srcset="" />
-            <img src="/imgs/germinate.jpg" alt="" srcset="" />
+            <img src="./sheep.jpg" alt="" srcset="" />
+            <img src="./herbicide-man.jpg" alt="" srcset="" />
+            <img src="./farm-lady.jpg" alt="" srcset="" />
+            <img src="./man.jpg" alt="" srcset="" />
+            <img src="./tractor-again.jpg" alt="" srcset="" />
+            <img src="./germinate.jpg" alt="" srcset="" />
           </div>
         </div>
       </div>
     </footer>
   </body>
+
+  <script>
+    document.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    });
+  </script>
 </html>

@@ -1,5 +1,5 @@
 const slider = function () {
-  const slides = document.querySelectorAll(".section-5-right");
+  const slides = document.querySelectorAll(".section-5-slide");
   const btnLeft = document.querySelector(".slide_btn-left");
   const btnRight = document.querySelector(".slide_btn-right");
   const dotContainer = document.querySelector(".dots");
@@ -105,17 +105,22 @@ const revealFeatures = function (entries, observer) {
   });
 
   function addFeatureAnimation() {
-    if (currentFeature < 3) {
+    const showFeatures = function () {
       setTimeout(() => {
+        console.log(currentFeature);
         features[currentFeature].classList.add("animate-features");
         currentFeature++;
+        currentFeature < 3 && showFeatures();
       }, 500);
-      observer.unobserve(entry.target);
-    }
+    };
+    showFeatures();
+    observer.unobserve(entry.target);
   }
-  setInterval(() => {
+  console.log(currentFeature);
+  currentFeature < 3 &&
+    // setInterval(() => {
     addFeatureAnimation();
-  }, 300);
+  // }, 300);
 };
 
 const featuresObserver = new IntersectionObserver(revealFeatures, {
